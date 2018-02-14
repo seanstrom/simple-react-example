@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "seanstrom",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bloomer": "^0.6.3",
+    "bulma": "^0.6.2",
+    "normalize.css": "^8.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "parcel serve ./src/index.html"
+  }
+}
