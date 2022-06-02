@@ -19,7 +19,6 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^8.0.2",
-    "recompose": "^0.26.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1"
   },
