@@ -1,17 +1,17 @@
 import React from 'react'
-import { Control, Icon, Input, PanelBlock } from 'bloomer'
+import { Form, Icon, Panel } from 'react-bulma-components'
 
 
 const UsersSearchBar = ({ onChange }) => {
   return (
-    <PanelBlock className='users-search-bar'>
-      <Control hasIcons='left'>
-        <Icon isSize='small' isAlign='left'>
+    <Panel.Block className='users-search-bar'>
+      <Form.Control>
+        <Icon size='small' align='left'>
           <span className='fa fa-search' />
         </Icon>
-        <Input placeholder='Search by name' onChange={onChange}/>
-      </Control>
-    </PanelBlock>
+        <Form.Input placeholder='Search by name' onChange={onChange}/>
+      </Form.Control>
+    </Panel.Block>
   )
 }
 

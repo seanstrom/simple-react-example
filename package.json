@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "bloomer": "^0.6.5",
     "bulma": "^0.9.4",
     "normalize.css": "^8.0.1",
     "react": "^16.14.0",
+    "react-bulma-components": "^4.1.0",
     "react-dom": "^16.14.0",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",

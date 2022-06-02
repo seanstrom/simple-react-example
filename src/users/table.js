@@ -1,10 +1,10 @@
 import React from 'react'
-import { Table } from 'bloomer'
+import { Table } from 'react-bulma-components'
 
 
 const UsersTable = ({ fields, users }) => {
   return (
-    <Table className='users-table' isBordered isStriped isFullWidth>
+    <Table className='users-table' bordered striped size="fullwidth">
       <thead>
         <tr>
           { fields.map(toHeaderField) }

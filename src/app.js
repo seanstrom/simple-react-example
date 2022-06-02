@@ -1,6 +1,6 @@
 import React from 'react'
 import { combineReducers } from 'redux'
-import { Box, Container, Section, Title } from 'bloomer'
+import { Box, Container, Section, Heading as Title } from 'react-bulma-components'
 import * as Users from './users'
 
 

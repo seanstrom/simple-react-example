@@ -1,12 +1,12 @@
 import React from 'react'
-import { Icon } from 'bloomer'
+import { Icon } from 'react-bulma-components'
 import UsersTable from './table'
 
 
 const Loading = () => {
   return (
     <div className='users-loading-screen'>
-      <Icon isSize='large'>
+      <Icon size='large'>
         <span className='fa fa-spinner fa-spin' />
       </Icon>
     </div>
