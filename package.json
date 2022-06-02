@@ -5,15 +5,17 @@
   "author": "seanstrom",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-react": "^6.24.1",
-    "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.5.1"
+    "@babel/core": "^7.18.2",
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
-    "axios": "^0.17.1",
-    "bloomer": "^0.6.3",
-    "bulma": "^0.6.2",
-    "normalize.css": "^8.0.0",
+    "axios": "^0.27.2",
+    "bloomer": "^0.6.5",
+    "bulma": "^0.9.4",
+    "normalize.css": "^8.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
@@ -23,6 +25,6 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "parcel serve ./src/index.html"
+    "start": "parcel ./src/index.html"
   }
 }
