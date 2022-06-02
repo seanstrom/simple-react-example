@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { connect } from 'react-redux'
-import { lifecycle } from 'recompose'
 import axios from 'axios'
 import { identity, merge } from './utils'
 import UsersContent from './users/content'
@@ -114,9 +113,12 @@ const view = (props) => {
     ? filterUsers(props.filter)(props.users)
     : props.users
 
+  const onChange = useMemo(() => changeFilter(dispatch), [dispatch])
+  useEffect(() => dispatch(fetch), [])
+
   return (
     <div>
-      <UsersSearchBar onChange={onChange(dispatch)} />
+      <UsersSearchBar onChange={onChange} />
       <UsersContent {...props} users={users} />
     </div>
   )
@@ -125,7 +127,7 @@ const view = (props) => {
 
 // View Helpers
 
-const onChange = (dispatch) => (event) => {
+const changeFilter = (dispatch) => (event) => {
   const value = event.target.value
   dispatch(filter(value))
 }
@@ -143,14 +145,7 @@ const filterUsers = (input) => (users) => {
 // Container
 
 const mapState = (state) => (state.users)
-
-const viewWithData = lifecycle({
-  componentDidMount() {
-    this.props.dispatch(fetch)
-  }
-})(view)
-
-const container = connect(mapState)(viewWithData)
+const container = connect(mapState)(view)
 
 
 export default container
